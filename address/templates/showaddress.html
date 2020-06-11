@@ -1,0 +1,35 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+{%for i in address %}
+
+<table border="2">
+
+<tr><td>House number</td> <td>{{i.hnumber}}</td></tr>
+
+<tr><td>Locality</td> <td>{{i.locality}}</td></tr>
+
+<tr><td>City</td> <td>{{i.city}}</td></tr>
+
+<tr><td>District</td> <td>{{i.district}}</td></tr>
+
+<tr><td>Country</td> <td>{{i.country}}</td></tr>
+
+<tr><td>Pincode</td> <td>{{i.pincode}}</td></tr>
+</table>
+<p></p>
+<hr>
+{% endfor %}
+<p><a href="http://127.0.0.1:8000/add"><button class="btn btn-primary">Add another address</button></a>
+</p>
+
+<style>
+
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+</style>
+{% endblock %}
