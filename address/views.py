@@ -23,4 +23,3 @@ def show(request):
 def base(request):
 
     return render(request,'landing.html')
-

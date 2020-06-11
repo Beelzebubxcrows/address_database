@@ -10,6 +10,8 @@ class address(models.Model):
     city = models.CharField( max_length = 30 ,blank = False)
     district = models.CharField( max_length = 30,blank = False)
     country = models.CharField(max_length = 30,blank = False)
+    lattitude = models.CharField(max_length=30,blank=True)
+    longitude= models.CharField(max_length=30,blank=True)
     
 
     def get_absolute_url(self):
